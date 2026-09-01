@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Software & Security Solutions</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: linear-gradient(135deg, #0b1329, #131c38);
+            color: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            background: linear-gradient(90deg, #0f172a, #1a233d);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid #d4af37;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            font-family: 'Times New Roman', Times, serif;
+            background: linear-gradient(90deg, #f3e5ab, #d4af37, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 38px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-family: 'Times New Roman', Times, serif;
+            color: #d4af37;
+            font-size: 18px;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #f8fafc;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        .intro p {
+            color: #cbd5e1;
+            font-size: 16px;
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: rgba(19, 28, 56, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #d4af37, #f3e5ab);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.15);
+        }
+        .card:hover::before {
+            opacity: 1;
+        }
+        .card h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #f3e5ab;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        .card p {
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .contact-section {
+            background: rgba(15, 23, 42, 0.9);
+            border-top: 2px solid #d4af37;
+            margin-top: 50px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact-section h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #d4af37;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            font-size: 16px;
+            color: #e2e8f0;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .contact-info span {
+            color: #d4af37;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #070b19;
+            color: #94a3b8;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NEXUS SOFTWARE SOLUTIONS</h1>
+        <p>Your Trusted Software & IT Partner</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Core Services & Enterprise Solutions</h2>
+            <p>Delivering robust business software and advanced security infrastructure tailored for modern enterprises.</p>
+        </div>
+
+        <div class="services">
+            <div class="card">
+                <h3>Trading Business Software</h3>
+                <p>Complete enterprise resource planning software to manage inventory, accounts, purchases, and multi-branch operations seamlessly.</p>
+            </div>
+            <div class="card">
+                <h3>POS (Supermarket & Restaurant)</h3>
+                <p>Lightning-fast barcode billing, stock tracking, and advanced point-of-sale software designed specifically for retail and dining businesses.</p>
+            </div>
+            <div class="card">
+                <h3>Van Sales Software</h3>
+                <p>Handheld and mobile-friendly billing solutions enabling smooth delivery management and field sales operations on the go.</p>
+            </div>
+            <div class="card">
+                <h3>Networking Solutions</h3>
+                <p>Expert structured cabling, LAN/Wi-Fi network setups, server rack management, and robust enterprise IT infrastructure solutions.</p>
+            </div>
+            <div class="card">
+                <h3>Camera Fitting & Security</h3>
+                <p>Professional security camera installations, high-definition surveillance setups, and advanced monitoring systems for complete safety.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h3>Get in Touch</h3>
+        <div class="contact-info">
+            <div><span>📞</span> +966 54 540 0786</div>
+            <div><span>✉️</span> saidnisarnkl786@gmail.com</div>
+            <div><span>📍</span> Jeddah, KSA | Kerala, India</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nexus Software & Security Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
